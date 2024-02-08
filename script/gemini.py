@@ -55,7 +55,7 @@ while True:
     with open(preprompt_file, "r") as f:
         preprompt = json.load(f)
     
-    # Initialize varialbe for prompt as raw text
+    # Initialize variable for prompt as raw text
     prompt = json.dumps(preprompt, indent=None)
 
     # print(prompt)
