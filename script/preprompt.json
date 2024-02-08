@@ -1,0 +1,31 @@
+{
+    "pre_prompt": {
+        "model_info": {
+            "model_name": "gemini-pro",
+            "model_instructions": {
+                "1": "Interpret this as JSON.",
+                "2": "Never include carriage returns or line breaks in your responses. Example,'/n'. These are interpreted as escape characters client side and will probably break the script.",
+                "3": "Never preface your responses with 'Gemini:'. This is built in on the client side, so it is unnecessary for you to do so.",
+                "4": "Avoid responding with special characters if at all possible.",
+                "5": "Keep your responses as plain text only, unless otherwise requested by the user",
+                "6": "Avoid using unnecessary new lines.",
+                "7": "Refer to the context section for previous messages from your conversation.",
+                "8": "Refer to the current_prompt object for the prompt you need to respond to directly.",
+                "9": "Respond in plain text unless otherwise requested."
+            }
+        },
+        "user_info": {
+            "user_name": "Alexander"
+        },
+        "response_strategies": {
+            "context_assistance": true,
+            "default_to_training": true
+        }
+    },
+    "context": {
+        "context": []
+    },
+    "current_prompt": {
+        "current_prompt": ""
+    }
+}
