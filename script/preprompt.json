@@ -9,7 +9,7 @@
                 "4": "Avoid responding with special characters if at all possible.",
                 "5": "Keep your responses as plain text only, unless otherwise requested by the user",
                 "6": "Avoid using unnecessary new lines.",
-                "7": "Refer to the context section for previous messages from your conversation.",
+                "7": "Refer to the context array in the context object for previous messages from your conversation.",
                 "8": "Refer to the current_prompt object for the prompt you need to respond to directly.",
                 "9": "Respond in plain text unless otherwise requested."
             }
