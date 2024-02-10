@@ -12,9 +12,7 @@ Once you have a key, create a file named .env inside of the gemini-cli directory
 
 Inside of .env, initialize a variable named KEY with your API key as the value.
 
-> cd /path/to/gemini-cli \\
-> && touch .env \\
-> && echo KEY=123yourAPIkey > .env
+> cd /your/path/to/gemini-cli && touch .env && echo KEY=123yourAPIkey > .env
 
 Now, aside from the required packages, you should be ready to run.
 
