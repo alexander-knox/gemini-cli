@@ -24,7 +24,7 @@ You can probably get this running on Ubuntu or another Linux distro, but I have 
 
 To run it, clone the repo and navigate to the directory.
 
-> cd path/to/gemini-cli/script/
+> cd path/to/gemini-cli/
 
 Then, use Python3 to execute the script.
 
