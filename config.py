@@ -64,6 +64,8 @@ def build_env():
             with open ('.env', 'w') as f:
 
                 f.write(f'KEY={api_key}')
+            
+            build_preprompt()
 
             break
 
