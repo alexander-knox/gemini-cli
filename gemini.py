@@ -29,7 +29,7 @@ model = genai.GenerativeModel('gemini-pro')
 
 # Initialize preprompt & feedback file names as variables
 preprompt_file = "preprompt.json"
-feedback_file = "feedback.json"
+feedback_file = "feedback.txt"
 
 # Initiate while loop for continous chat 
 # Input 'exit' to break loop
@@ -62,7 +62,9 @@ while True:
 
     # Feed prompt to the model && print the response for the user && collect API feedback
     response = model.generate_content(prompt)
-    # print(response.prompt_feedback)
+    feedback = response.prompt_feedback
+    print(response)
+    # print response
     print(f"\nGemini: {response.text}\n")
 
     # Append model response to context in preprompt file
@@ -70,11 +72,9 @@ while True:
     with open(preprompt_file, "w") as f:
         json.dump(preprompt, f, indent=4)
 
-    '''
     with open(feedback_file, "w") as f:
-        json.dump(feedback, f, indent=4)
-    '''
-
+        f.write(str(feedback))
+    
     # Loop break
     if current_prompt.lower() == "exit":
         break
