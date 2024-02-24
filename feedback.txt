@@ -14,4 +14,3 @@ safety_ratings {
   category: HARM_CATEGORY_DANGEROUS_CONTENT
   probability: NEGLIGIBLE
 }
-
