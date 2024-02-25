@@ -23,22 +23,9 @@
         }
     },
     "context": {
-        "context": [
-            {
-                "message": "User: hello there"
-            },
-            {
-                "message": "Gemini: Hello, how may I help you today?"
-            },
-            {
-                "message": "User: exit"
-            },
-            {
-                "message": "Gemini: Goodbye. Have a nice day."
-            }
-        ]
+        "context": []
     },
     "current_prompt": {
-        "current_prompt": "exit"
+        "current_prompt": ""
     }
 }
