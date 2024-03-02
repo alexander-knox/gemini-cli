@@ -39,7 +39,7 @@ def get_user_input():
     cleaned_prompt = raw_prompt.lower().strip().replace(':','').replace('"','').replace('{', '').replace('}', '').replace("'",'')
     current_prompt = cleaned_prompt
 
-    # Pass the sanitized user input to the io_handler, unless the user is trying to exit the script.
+    # Pass the sanitized user input to the log_user_input function, unless the user is trying to exit the script.
     if current_prompt == "exit":
         return
     else:
@@ -49,7 +49,7 @@ def get_user_input():
 
 def log_user_input(inputs):
         
-        # Set inputs to current prompt
+        # Set inputs as current prompt
         current_prompt = inputs
 
         # Load the pre-prompt file in preparation for inserting user input

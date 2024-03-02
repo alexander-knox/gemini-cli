@@ -1,4 +1,4 @@
-# Contains secrets
+# Contains secrets and venv files
 
 .env
 bin
@@ -7,8 +7,8 @@ lib
 lib64
 pyvenv.cfg
 
-# This is for testing and dev purposes only
+# Under development and/or testing
 
-templates/buffer.json
-testing/
-
+config.py
+templates
+testing
