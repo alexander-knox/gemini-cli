@@ -1,7 +1,14 @@
 # Contains secrets
+
 .env
+bin
+include
+lib
+lib64
+pyvenv.cfg
 
 # This is for testing and dev purposes only
+
 templates/buffer.json
 testing/
 
