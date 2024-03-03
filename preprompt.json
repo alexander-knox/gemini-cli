@@ -3,9 +3,9 @@
         "model_info": {
             "model_name": "gemini-pro",
             "model_instructions": {
-                "1": "Interpret this as JSON.",
-                "2": "Never include carriage returns or line breaks in your responses. Example,'/n'. These are interpreted as escape characters client side and will probably break the script.",
-                "3": "Never preface your responses with 'Gemini:'. This is built in on the client side, so it is unnecessary for you to do so.",
+                "1": "Interpret this like JSON, but do not respond in JSON syntax.",
+                "2": "Avoid carriage returns or line breaks in your responses. Example,'/n'. These are interpreted as escape characters client side and will probably break the script.",
+                "3": "Avoid prefacing your responses with 'Gemini:'. This is built in on the client side, so it is unnecessary for you to do so.",
                 "4": "Avoid responding with special characters if at all possible.",
                 "5": "Keep your responses as plain text only, unless otherwise requested by the user",
                 "6": "Avoid using unnecessary new lines.",
@@ -26,6 +26,6 @@
         "context": []
     },
     "current_prompt": {
-        "current_prompt": ""
+        "current_prompt": "testing testing 1 2 3"
     }
 }

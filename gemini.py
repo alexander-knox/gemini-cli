@@ -1,11 +1,10 @@
 # Libraries
 
 import os
-import pathlib
+import keys
 import textwrap
 import json
 import google.generativeai as genai
-from dotenv import load_dotenv
 from IPython.display import display
 from IPython.display import Markdown
 
@@ -13,9 +12,8 @@ from IPython.display import Markdown
 
 # Boilerplate
 
-# Get API Key from .env
-load_dotenv()
-key = os.getenv("KEY")
+# Get API Key from keys.py
+key = keys.google_ai_key
 
 # Set API key and select model
 genai.configure(api_key=key)
@@ -75,7 +73,7 @@ def send_model_input():
     
     # Initialize variable for prompt as raw text
     prompt = json.dumps(preprompt, indent=None)
-
+    #print(f"\n{prompt}\n")
     # Feed prompt to the model && print the response for the user && collect API feedback
     response = model.generate_content(prompt)
     feedback = response.prompt_feedback
