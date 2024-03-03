@@ -40,11 +40,9 @@ Logging the conversation and model instructions in a JSON file that I feed to th
 
 **Without the preprompt.json file, Gemini has no memory of previous messages.**
 
-Feel free to experiment with the model instructions found in prepompt.json to modify or alter Gemini's behavior.
+Feel free to exercise your LLM jailbreaking techniques or prompt engineering strategies by experimenting directly with the model instructions found in preprompt.json.
 
-Now,
-
-To run gemini.py, navigate to the directory that contains it & use Python3 to execute the script.
+Now, to run gemini.py, navigate to the directory that contains it & use Python3 to execute the script.
 
 > cd path/to/gemini-cli/
 

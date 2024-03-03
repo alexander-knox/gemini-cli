@@ -19,7 +19,7 @@
         },
         "response_strategies": {
             "context_assistance": true,
-            "default_to_training": true
+            "default_to_training": false
         }
     },
     "context": {
