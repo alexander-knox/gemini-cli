@@ -11,6 +11,7 @@ You can get one [here](https://makersuite.google.com/app/apikey).
 Once you have your key, create a keys.py file to contain your api key in a global variable, like this:
 
 > touch key.py
+
 > echo google_ai_key = '123yourapikey' > keys.py
 
 For this project's dependencies, refer to the requirements.txt file.
@@ -46,6 +47,7 @@ Feel free to exercise your LLM jailbreaking techniques ans prompt engineering st
 Once you've cloned the repo, created the venv and installed the dependencies, you're ready to run gemini.py. Navigate to the directory that contains the script & use Python3 to execute the script.
 
 > cd path/to/gemini-cli/
+
 > python3 gemini.py
 
 It will run in your current terminal session, and you will be prompted to input text:
